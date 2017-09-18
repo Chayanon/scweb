@@ -1,0 +1,25 @@
+{{define "root"}}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SharingCitizen</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css" rel="stylesheet"> -->
+        <link href="/-/css/style.css" rel="stylesheet">
+        {{template "root-style" .}}
+    </head>
+    <body>
+        <div>
+            Nav
+        </div>
+        <div>
+        {{template "root-body" .}}
+        </div>
+        <div>
+            Footer
+        </div>
+        {{template "root-script" .}}
+    </body>
+</html>
+{{end}}
